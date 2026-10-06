@@ -15,7 +15,7 @@ function LikeButton({ count, onLike }) {
   );
 }
 
-export default function App() {
+export default function exo1() {
   // TODO : déclare le state likes (initialisé à 0)
   const [count, setCount] = useState(0);
   // TODO : déclare la fonction handleLike

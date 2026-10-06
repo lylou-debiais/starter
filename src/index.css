@@ -1,8 +1,13 @@
 @import "tailwindcss";
 
 
+@theme inline {
+
+}
+
 @layer base {
-  body {
-    @apply bg-gray-100 text-gray-900;
-  }
+    :root {
+        --clr-blue: blue;
+        --clr-red: red;
+    }
 }
