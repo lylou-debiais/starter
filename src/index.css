@@ -1,13 +1,23 @@
 @import "tailwindcss";
 
-
 @theme inline {
-
+  --color-bg: var(--clr-bg);
+  --color-fg: var(--clr-fg);
 }
 
 @layer base {
-    :root {
-        --clr-blue: blue;
-        --clr-red: red;
-    }
+  :root {
+    /* Tokens primitifs */
+    --clr-white: #ffffff;
+    --clr-dark: #1a1a1a;
+
+    /* Tokens sémantiques */
+    --clr-fg: var(--clr-dark);
+    --clr-bg: var(--clr-white);
+  }
+
+  .dark {
+    --clr-fg: var(--clr-white);
+    --clr-bg: var(--clr-dark);
+  }
 }

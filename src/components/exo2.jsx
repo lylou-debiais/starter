@@ -13,7 +13,7 @@ function ColorPicker( { onColorSelect }) {
   );
 }
 
-export default function exo() {
+export default function exo2() {
   // TODO : state bgColor (initialisé à "white")
   const [bgColor, setBgColor] = useState("white");
   // TODO : fonction handleColorChange(color) qui met à jour bgColor
