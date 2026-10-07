@@ -4,6 +4,7 @@ import exo3 from './components/exo3';
 import exo4 from './components/exo4';
 import exo5 from './components/exo5';
 import exo6 from './components/exo6';
+import exo7 from './components/exo7';
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
       {exo4()}
       {exo5()}
       {exo6()}
+      {exo7()}
     </div>
   );
 }
