@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 function UncontrolledInput({ name, placeholder, buttonText, onSubmit }) {
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -36,9 +38,11 @@ function UncontrolledInput({ name, placeholder, buttonText, onSubmit }) {
 }
 
 export default function exo7() {
+    const [text, setText] = useState("");
   const handleNameSubmit = (name) => {
     // TODO : affiche `Bonjour, ${name} !` dans une alerte
-    alert(`Bonjour, ${name} !`);
+    //alert(`Bonjour, ${name} !`);
+    setText(name);
   };
 
   return (
@@ -46,11 +50,12 @@ export default function exo7() {
       <h1 className="mb-4 text-xl">Exercice 7</h1>
       {/* TODO : <UncontrolledInput /> avec toutes ses props */}
         <UncontrolledInput
-          name="username"
+          name="name"
           placeholder="Pierre Paul"
           buttonText="Valider"
           onSubmit={handleNameSubmit}
         />
+        <p>{text}</p>
     </div>
   );
 }
