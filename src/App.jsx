@@ -2,6 +2,8 @@ import exo1 from './components/exo1';
 import exo2 from './components/exo2';
 import exo3 from './components/exo3';
 import exo4 from './components/exo4';
+import exo5 from './components/exo5';
+import exo6 from './components/exo6';
 
 export default function App() {
   return (
@@ -10,6 +12,8 @@ export default function App() {
       {exo2()}
       {exo3()}
       {exo4()}
+      {exo5()}
+      {exo6()}
     </div>
   );
 }
