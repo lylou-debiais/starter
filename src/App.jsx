@@ -1,8 +1,18 @@
+import useFetch from "./hooks/useFetch";
+
+const { data, error, isLoading, refetch } = useFetch(
+  "https://rickandmortyapi.com/api/",
+);
+
+if (isLoading) return <p>Chargement...</p>;
+if (error) return <p>Erreur : {error.message}</p>;
+const characters = data.results[0];
+
 function App() {
   return (
-    <div className="flex items-center justify-center h-screen bg-gray-100">
-      <h1 className="text-4xl font-bold text-blue-500">Hello, Tailwind CSS!</h1>
-    </div>
+    <>
+      <h1>Rick and Morty</h1>
+    </>
   );
 }
 
